@@ -6,3 +6,4 @@ opencv-python==4.9.0.80
 requests==2.31.0
 python-dotenv==1.0.1
 Pillow==10.2.0
+numpy<2
