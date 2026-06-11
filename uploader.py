@@ -151,9 +151,9 @@ def strip_markdown(text: str) -> str:
     return text
 
 def generate_content_with_gemini(frame_path: Path, image_path: Path):
-    logging.info("Generating content using Gemini 1.5 Flash...")
+    logging.info("Generating content using Gemini 2.5 Flash...")
     genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     
     def try_gemini(prompt, file_path):
         mime_type = "image/jpeg"
